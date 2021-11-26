@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+
+
+<div th:fragment="login-form-content" class="content">
+
+    <center><h2>LOGOWANIE</h2></center>
+    <form>
+        <div class="sign-up-form">
+            <div class="sign-up-form-row"> <label>NAZWA UŻYTKOWNIKA</label> </div>
+            <div class="sign-up-form-row"> <input type="text" required> </div>
+
+            <div class="sign-up-form-row"> <label>HASŁO</label> </div>
+            <div class="sign-up-form-row"> <input type="password" required> </div>
+
+            <div class="sign-up-form-row"> <button type="submit">LOGUJ</button> </div>
+        </div>
+    </form>
+
+</div>
+<div th:fragment="register-form-content" class="content">
+    <h1> <center>REGISTER FORM</center> </h1>
+
+</div>
+
+<div th:fragment="wellcome-page-content" class="content">
+    <h1> <center>WELLCOME PAGE</center> </h1>
+
+</div>
+
+<div th:fragment="about-content" class="content">
+
+    <h1> <center>O NAS</center> </h1>
+
+</div>
+
+<div th:fragment="contact-content" class="content">
+
+    <h1> <center>KONTAKT</center> </h1>
+
+</div>
+
+</html>

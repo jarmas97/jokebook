@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+
+<div th:fragment="tabs-header" class="tabs-header">
+
+    <div class="tabs-header-container">
+        <a th:href="@{/}" class="tab">STONA GŁÓWNA</a>
+        <a th:href="@{/about}" class="tab">O NAS</a>
+        <a th:href="@{/contact}" class="tab">KONTAKT</a>
+
+    </div>
+
+    <div class="login-form-header">
+        <form>
+            <input type="text" placeholder="LOGIN">
+            <input type="password" placeholder="HASŁO">
+            <button type="submit">ZALOGUJ</button>
+        </form>
+    </div>
+
+</div>
+
+</html>

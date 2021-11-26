@@ -1,0 +1,235 @@
+:root {
+    --header-bg-color: rgba(16, 16, 16, 1);
+    --tabs-header-bg-color: rgba(16, 16, 16, 1);
+    --tab-bg-color: rgba(35, 36, 36, 1);
+    --content-bg-color: rgba(181, 181, 181, 0.8);
+    --footer-bg-color: rgba(16, 16, 16, 1);
+    --font-color-light: rgba(215, 217, 217, 1);
+    --font-color-dark: rgba(0, 0, 0, 1);
+}
+
+body {
+    background: url("background.jpg");
+    no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+    font-family: Sans-serif	, monospace;
+    font-size: 18px;
+    color: var(--font-color-light);
+    margin: 0px;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none !important;
+    border:0px !important;
+    outline:none;
+    border-width: 0px;
+    outline-width:0px;
+    border-bottom: none;
+}
+
+form {
+    display: flex;
+}
+.wrapper {
+    min-height: calc(100vh - 131px);
+}
+
+input[type=text], input[type=password] {
+    padding: 6px;
+    width: 108px;
+    font-size: 14px;
+    text-align: center;
+    text-decoration: none;
+    text-shadow: 0px 0px 0px transparent;
+}
+
+label {
+    padding: 7px;
+}
+
+.header {
+    background-color: var(--header-bg-color);
+}
+
+.header-container {
+    margin-right: auto;
+    margin-left: auto;
+    width: 80%;
+}
+
+.logo {
+    margin-right: auto;
+    margin-left: auto;
+    width: 300px;
+    height: 80px;
+    text-decoration: none;
+    box-shadow: 0px 0px 0px transparent;
+    border: 0px solid transparent;
+    text-shadow: 0px 0px 0px transparent;
+}
+
+.social-media-icon {
+    width: 30px;
+    height: 30px;
+    text-decoration: none;
+    box-shadow: 0px 0px 0px transparent;
+    border: 0px solid transparent;
+    text-shadow: 0px 0px 0px transparent;
+}
+
+.tabs-header {
+    background-color: var(--tabs-header-bg-color);
+    display: flex;
+}
+
+.tabs-header-container {
+    background-color: var(--tabs-header-bg-color);
+    margin-left: 10%;
+    width: 80%;
+    display: flex;
+}
+
+.tab{
+    width: auto;
+    padding: 8px;
+    cursor: default;
+    font-family: inherit;
+    font-size: 14px;
+    background: var(--tab-bg-color);
+    color: var(--font-color-light);
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    box-shadow: 0px 0px 0px transparent;
+    border: 0px solid transparent;
+    text-shadow: 0px 0px 0px transparent;
+}
+
+button {
+    width: 116px;
+    padding: 8px;
+    cursor: default;
+    font-family: inherit;
+    font-size: 14px;
+    background: var(--tab-bg-color);
+    color: var(--font-color-light);
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    box-shadow: 0px 0px 0px transparent;
+    border: 0px solid transparent;
+    text-shadow: 0px 0px 0px transparent;
+}
+
+.tab:hover, button:hover {
+    background: rgba(0, 0, 0, 0.7);
+    box-shadow: 0px 0px 0px transparent;
+    border: 0px solid transparent;
+    text-shadow: 0px 0px 0px transparent;
+}
+
+.tab:active, button:active {
+    background: rgba(255, 255, 255, 0.3);
+    outline: none;
+    border: none;
+}
+
+.tab:focus, button:focus {
+    outline: 0;
+}
+
+.login-form-header {
+    background-color: var(--tabs-header-bg-color);
+    margin-right: 10%;
+    padding: 0px;
+    cursor: default;
+    font-family: inherit;
+    font-size: 14px;
+    background: var(--tab-bg-color);
+    color: var(--font-color-light);
+    text-align: center;
+    text-transform: uppercase;
+    display: flex;
+}
+
+.content {
+    padding: 40px;
+    margin-top: 30px;
+    margin-right: auto;
+    margin-left: auto;
+    color: var(--font-color-dark);
+    width: 70%;
+    background-color: var(--content-bg-color);
+}
+
+.footer {
+    text-align: center;
+    height: 60px;
+    margin-top: 30px;
+    padding: 20px;
+    background-color: var(--footer-bg-color);
+    color: rgba(110, 110, 110, 1);
+    font-size: 14px;
+}
+
+.sign-up-form {
+    padding-top: 30px;
+    width: 100%;
+    text-align: center;
+}
+
+.sign-up-form-row input {
+
+    width: 150px;
+}
+
+/* -------------------------------------- RESPONSIVE --------------------------------------*/
+
+
+@media (max-width: 1000px) {
+
+  /* ------- CSS that should be displayed if width is equal to or less than 1000px goes here ------- */
+
+  .tabs-header-container {
+    margin-left: 0px;
+    width: 100%;
+    background-color: rgba(16, 16, 16, 1);
+    justify-content: center
+  }
+
+ .login-form-header {
+    margin-left: 0px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 100%;
+    background-color: rgba(16, 16, 16, 1);
+    justify-content: center
+ }
+ .header-container {
+    text-align: center;
+ }
+ .tabs-header {
+     display: inline;
+     background-color: rgba(16, 16, 16, 0);
+ }
+}
+
+@media (max-width: 400px) {
+ .tab {
+    width: 80px;
+ }
+ button {
+     width: 84px;
+  }
+ input[type=text], input[type=password] {
+     width: 88px;
+ }
+}
