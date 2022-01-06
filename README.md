@@ -13,4 +13,8 @@ A simple web application used to post and rate various types of jokes
 - Spring Boot
 
 ## Available on
-Heroku: ....link will be placed in here.....
+Heroku: https://jokebook-app.herokuapp.com/
+
+## Ideas
+- switchable language versions
+- switchable display mode (light/dark)
